@@ -1,0 +1,37 @@
+# Ejercicios de Visualización de Datos
+
+## 1. 
+Escribir un programa que pregunte al usuario por las ventas de un rango de años y muestre por pantalla un diagrama de líneas con la evolución de las ventas.
+
+## 2. 
+Escribir una función que reciba un diccionario con las notas de las asignaturas de un curso y una cadena con el nombre de un color y devuelva un diagrama de barras de las notas en el color dado.
+
+## 3. 
+Escribir una función que reciba una serie de Pandas con las notas de los alumnos de un curso y devuelva un diagrama de cajas con las notas. El diagrama debe tener el título “Distribución de notas”.
+
+## 4. 
+El fichero `bancos.csv` contiene las cotizaciones de los principales bancos de España con:
+- Empresa (nombre de la empresa)
+- Apertura (precio de la acción a la apertura de bolsa)
+- Máximo (precio máximo de la acción durante la jornada)
+- Mínimo (precio mínimo de la acción durante la jornada)
+- Cierre (precio de la acción al cierre de bolsa)
+- Volumen (volumen al cierre de bolsa)
+
+Construir una función reciba el fichero `bancos.csv` y cree un diagrama de líneas con las series temporales de las cotizaciones de cierre de cada banco.
+
+## 5. 
+El fichero `titanic.csv` contiene información sobre los pasajeros del Titanic. Crear un dataframe con Pandas y a partir de él generar los siguientes diagramas:
+- Diagrama de sectores con los fallecidos y supervivientes.
+- Histograma con las edades.
+- Diagrama de barras con el número de personas en cada clase.
+- Diagrama de barras con el número de personas fallecidas y supervivientes en cada clase.
+- Diagrama de barras con el número de personas fallecidas y supervivientes acumuladas en cada clase.
+
+Para realizar algunos de los siguientes ejercicios, usaremos principalmente el conjunto de datos `tips` de Seaborn. El código para cargar los datos:
+
+```python
+import seaborn as sns
+
+# Cargar el conjunto de datos 'tips' de Seaborn
+df = sns.load_dataset('tips')
